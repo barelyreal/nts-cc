@@ -2,17 +2,13 @@ package org.barelyreal.n26.challenge;
 
 import org.barelyreal.n26.challenge.model.SummaryStats;
 import org.barelyreal.n26.challenge.model.Transaction;
-import org.junit.Before;
 import org.junit.Test;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import static org.junit.Assert.*;
 
 
 public class TransactionBufferTest {
-
 
     @Test
     public void createValidAndInvalidTransactions() {

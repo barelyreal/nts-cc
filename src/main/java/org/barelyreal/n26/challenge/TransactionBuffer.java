@@ -6,7 +6,7 @@ import org.barelyreal.n26.challenge.model.Transaction;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * Keeps a buffer of summary stats for the last n milliseconds.  Every time a new object is added,
+ * Keeps a buffer of summary stats for the last n milliseconds.
  *
  * objects are kept in array buckets that represent a fixed length of time relative to the last update
  * time.

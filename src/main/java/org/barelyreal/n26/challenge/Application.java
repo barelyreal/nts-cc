@@ -2,6 +2,10 @@ package org.barelyreal.n26.challenge;
 
 import static spark.Spark.*;
 
+
+/**
+ * The main entry point for Spark
+ */
 public class Application {
 
     // Declare dependencies
@@ -20,7 +24,5 @@ public class Application {
         // Set up routes
         post("/transactions",  transactionController::handleTransactionPost);
         get("/statistics", transactionController::handleSummaryGet);
-
     }
-
 }

@@ -2,6 +2,7 @@ package org.barelyreal.n26.challenge.model;
 
 import com.google.gson.Gson;
 
+
 public class Transaction {
 
     private static final Gson gson = new Gson();
@@ -17,5 +18,4 @@ public class Transaction {
     public static Transaction fromJson(String json) {
         return gson.fromJson(json, Transaction.class);
     }
-
 }
