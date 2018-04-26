@@ -1,0 +1,28 @@
+plugins {
+    id "java"
+    id "application"
+    id "com.github.johnrengelman.shadow" version "1.2.3"
+}
+
+//group 'org.shelajev.webframeworks'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+mainClassName = 'org.barelyreal.n26.challenge.Application'
+
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.7.2'
+//    compile 'com.sparkjava:spark-template-thymeleaf:2.3'
+//    compile 'org.mongodb:mongodb-driver-reactivestreams:1.2.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'org.slf4j:slf4j-simple:1.7.21'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
